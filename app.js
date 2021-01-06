@@ -47,6 +47,7 @@ const sortbtn = document.querySelector("#sort");
 const totalbtn = document.querySelector("#total");
 const reversebtn = document.querySelector("#reverse");
 const search = document.querySelector("#search");
+const submitForm = document.querySelector("#formData");
 
 // catch listener
 document.addEventListener("DOMContentLoaded", showData(dataList));
@@ -65,6 +66,22 @@ search.addEventListener("input", (e) => {
   }
   showData(data);
 });
+
+submitForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+  let dataobj = {
+    name: document.querySelector("#name").value,
+    salary: document.querySelector("#income").value
+  }
+  dataList.push(dataobj);
+  clearDataField();
+  showData(dataList);
+})
+
+function clearDataField() {
+  document.querySelector("#name").value = "";
+  document.querySelector("#income").value = "";
+}
 
 function showData(data) {
   dataContainer.innerHTML = "";

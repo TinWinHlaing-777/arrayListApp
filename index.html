@@ -18,9 +18,23 @@
 			<div class="card-body">
 				<div class="row">
 					<div class="col-md-6">
-						<div class="mb-3">
-							<label class="form-label" for="search">Search</label>
-							<input type="text" name="searchname" id="search" class="form-control">
+						<div class="card shadow-lg mb-4">
+							<div class="card-body">
+								<form id="formData">
+									<div class="mb-3">
+										<label for="name" class="form-label">Name</label>
+										<input type="text" class="form-control" id="name">
+									</div>
+									<div class="mb-3">
+										<label for="income" class="form-label">Income</label>
+										<input type="number" name="num" id="income" class="form-control">
+									</div>
+									<div class="d-grid gap-2 mb-3">
+										<button class="btn btn-success text-light fw-bold" type="submit">Send
+											Data</button>
+									</div>
+								</form>
+							</div>
 						</div>
 						<div class="d-grid gap-2 mb-3">
 							<button type="button" class="btn btn-info text-light fw-bold" id="double">Double
@@ -44,6 +58,10 @@
 						</div>
 					</div>
 					<div class="col-md-6">
+						<div class="mb-3">
+							<label class="form-label" for="search">Search</label>
+							<input type="text" name="searchname" id="search" class="form-control">
+						</div>
 						<div class="card shadow-lg">
 							<div class="card-title text-center mt-3">
 								<h4 class="fw-bold">Data List</h4>
