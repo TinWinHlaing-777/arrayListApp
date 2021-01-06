@@ -1,0 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo&display=swap');
+
+body {
+	font-family: "Arimo", sans-serif;
+	background-image: linear-gradient(130deg, #85C1E9, #2E86C1);
+	background-repeat: no-repeat;
+	height: 100vh;
+}
