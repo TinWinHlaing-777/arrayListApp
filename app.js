@@ -71,7 +71,7 @@ submitForm.addEventListener("submit", (e) => {
   e.preventDefault();
   let dataobj = {
     name: document.querySelector("#name").value,
-    salary: document.querySelector("#income").value
+    salary: document.querySelector("#income").value * 1
   }
   dataList.push(dataobj);
   clearDataField();
